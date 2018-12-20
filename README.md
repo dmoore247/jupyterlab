@@ -9,7 +9,7 @@ Quickstart Python JupyterLab environment
 | pip --version	| pip 18.1 from /anaconda3/envs/jupyterlab/lib/python3.7/site-| | packages/pip (python 3.7) |
 | python --version | Python 3.7.1 |
 | uname -a	| Darwin <hostname> 17.7.0 Darwin Kernel Version 17.7.0: Thu Jun 21 22:53:14 PDT 2018; root:xnu-4570.71.2~1/RELEASE_X86_64 x86_64 |
-
+| sqlite3 --version | 3.26.0 2018-12-01 12:34:55 bf8c1b2b7a5960c282e543b9c293686dccff272512d08865f4600fb58238b4f9 |
 
 ## Install
 ```
@@ -21,6 +21,7 @@ jupyter labextension install @jupyterlab/git
 pip install jupyterlab-git
 jupyter serverextension enable --py jupyterlab_git
 ```
+
 ## Requirements
 ```
 appnope==0.1.0
@@ -65,12 +66,14 @@ traitlets==4.3.2
 wcwidth==0.1.7
 webencodings==0.5.1
 ```
+
 ## Start
 ```
 conda activate jupyterlab
 cd ~
-jupyter lab
+jupyter lab # this will launch your default browser or give you an encoded link.
 ```
+
 ## Uninstall
 ```
 conda deactivate jupyterlab
