@@ -65,7 +65,12 @@ traitlets==4.3.2
 wcwidth==0.1.7
 webencodings==0.5.1
 ```
-
+## Start
+```
+conda activate jupyterlab
+cd ~
+jupyter lab
+```
 ## Uninstall
 ```
 conda deactivate jupyterlab
